@@ -1,8 +1,5 @@
-export function Dashboard() {
-  return (
-    <div>
-      <h2>Protected Dashboard</h2>
-      <p>Welcome! This page is only visible to signed-in readers.</p>
-    </div>
-  );
-}
+export const Dashboard = () => (
+  <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+    <h1>Dashboard Panel</h1>
+  </div>
+);

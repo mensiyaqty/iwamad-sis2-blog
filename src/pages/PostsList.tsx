@@ -1,13 +1,5 @@
-import { posts } from '../data/posts';
-import { PostCard } from '../components/PostCard';
-
-export function PostsList() {
-  return (
-    <div>
-      <h2>All Blog Posts</h2>
-      {posts.map((post) => (
-        <PostCard key={post.id} post={post} />
-      ))}
-    </div>
-  );
-}
+export const Postslist = () => (
+  <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+    <h1>Posts List</h1>
+  </div>
+);

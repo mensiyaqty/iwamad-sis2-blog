@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/iwamad-sis2-blog/',
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
   },
 })

@@ -1,9 +1,6 @@
-export function SignIn({ onSignIn }: { onSignIn: () => void }) {
-  return (
-    <div>
-      <h2>Sign In Required</h2>
-      <p>You must sign in to view the dashboard.</p>
-      <button onClick={onSignIn}>Sign In</button>
-    </div>
-  );
-}
+export const SignIn = ({ setIsAuthenticated }: { setIsAuthenticated: (val: boolean) => void }) => (
+  <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+    <h1>Sign In</h1>
+    <button onClick={() => setIsAuthenticated(true)}>Log In</button>
+  </div>
+);
